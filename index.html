@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#101b27">
+  <meta name="description" content="Grow a living signal network through a luminous alien orchard in this relaxing logic puzzle.">
+  <title>Signal Orchard — GAME-001</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Signal Orchard home"><span class="brand-mark">✳</span><span>SIGNAL <b>ORCHARD</b></span></a>
+      <div class="top-actions"><span class="save-label"><i></i> Progress saved</span><button id="soundBtn" class="icon-btn" aria-label="Toggle sound" title="Toggle sound">♫</button><button id="helpBtn" class="icon-btn" aria-label="How to play" title="How to play">?</button></div>
+    </header>
+    <section class="game-layout">
+      <aside class="side-panel left-panel">
+        <div class="eyebrow">A LIVING LOGIC PUZZLE</div>
+        <h1>Make the<br><em>current</em> grow.</h1>
+        <p class="intro">Turn the relay seeds. Carry the beacon's light through the orchard and wake every grove.</p>
+        <div class="level-card"><div class="level-head"><div><div class="eyebrow">CURRENT GROWTH</div><h2 id="levelName">First Light</h2></div><span class="level-number" id="levelNumber">01</span></div><p id="levelHint" class="level-hint"></p>
+          <div class="progress-wrap"><div class="progress-copy"><span>GROVES AWAKENED</span><b id="groveCount">0 / 2</b></div><div class="progress-track"><div id="progressBar"></div></div></div>
+        </div>
+        <div class="controls-note"><span class="note-icon">↻</span><div><b>Turn a seed</b><span>Tap or click any relay to rotate it.</span></div></div>
+        <div class="controls-note"><span class="note-icon">⌨</span><div><b>Made for every screen</b><span>Touch, mouse, or keyboard.</span></div></div>
+        <div class="left-bottom"><span class="edition">A SMALL GAME ABOUT GROWING CONNECTIONS</span><span class="game-id">GAME-001 · v0.1</span></div>
+      </aside>
+      <section class="board-column" aria-label="Puzzle board">
+        <div class="board-top"><div class="stage-label"><span class="live-dot"></span><span id="stageLabel">ORCHARD 01</span></div><div class="board-tools"><span id="moveCount">0 turns</span><button id="resetBtn" class="text-btn">↻ <span>Reset</span></button></div></div>
+        <div class="board-frame"><canvas id="game" aria-label="Signal Orchard game board. Use arrow keys to move between relays, Enter or Space to rotate." tabindex="0"></canvas><div id="toast" class="toast" aria-live="polite"></div><div id="overlay" class="overlay hidden"></div></div>
+        <div class="board-footer"><span><i class="legend-source"></i> BEACON</span><span><i class="legend-relay"></i> RELAY SEED</span><span><i class="legend-grove"></i> DORMANT GROVE</span><span id="audioHint">SOUND ON</span></div>
+      </section>
+      <aside class="side-panel right-panel"><div class="eyebrow">THE FIELD GUIDE</div><h2>Follow the<br><em>feeling.</em></h2><div class="field-guide"><div class="guide-step"><span class="step-no">01</span><div><b>Read the paths</b><p>Each seed has little openings. Light can only travel through an opening that meets another.</p></div></div><div class="guide-step"><span class="step-no">02</span><div><b>Turn toward life</b><p>Tap a relay to turn it clockwise. Every turn shifts the whole network.</p></div></div><div class="guide-step"><span class="step-no">03</span><div><b>Wake every grove</b><p>Reach all the blossoms in one connected signal to let the orchard bloom.</p></div></div></div><div class="field-tip"><span>✦</span><p id="tipText">A quiet eye often sees the path before a busy hand does.</p></div><div class="next-level"><button id="nextBtn" class="primary-btn" disabled>Orchard in balance <span>→</span></button><span>Finish the network to continue</span></div></aside>
+    </section>
+    <footer class="page-footer"><span>TAKE A BREATH. FIND THE WAY.</span><span>NO TIMER · NO WRONG TURNS</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
