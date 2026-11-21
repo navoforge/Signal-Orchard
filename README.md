@@ -1,11 +1,13 @@
 # Signal Orchard
 
 **Game ID:** GAME-001  
-**Version:** v0.1 — playable first release  
+**Version:** v0.3 — 100-level campaign and locked level picker  
 **Genre:** Puzzle / Strategy  
 **Status:** Playable
 
-Turn the relay seeds to carry a beacon's light through a quiet alien orchard. Connect every dormant grove to finish a level. The game has six hand-laid-out puzzles, increasing in branching and route complexity.
+Turn the relay seeds to carry a beacon's light through a quiet alien orchard. Connect every dormant grove to finish a level. The campaign has 100 sequential levels. The first 18 use hand-laid-out networks; later levels remix those networks with mirrored boards, varied relay rotations, and additional route bends.
+
+Only the first level is open at the start. Finishing a level opens the next one. Use **Levels** above the board to revisit any level already unlocked; locked levels stay unavailable until you complete the previous level.
 
 ## Run locally
 
