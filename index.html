@@ -24,10 +24,10 @@
         </div>
         <div class="controls-note"><span class="note-icon">↻</span><div><b>Turn a seed</b><span>Tap or click any relay to rotate it.</span></div></div>
         <div class="controls-note"><span class="note-icon">⌨</span><div><b>Made for every screen</b><span>Touch, mouse, or keyboard.</span></div></div>
-        <div class="left-bottom"><span class="edition">A SMALL GAME ABOUT GROWING CONNECTIONS</span><span class="game-id">GAME-001 · v0.1</span></div>
+        <div class="left-bottom"><span class="edition">A SMALL GAME ABOUT GROWING CONNECTIONS</span><span class="game-id">GAME-001 · v0.3</span></div>
       </aside>
       <section class="board-column" aria-label="Puzzle board">
-        <div class="board-top"><div class="stage-label"><span class="live-dot"></span><span id="stageLabel">ORCHARD 01</span></div><div class="board-tools"><span id="moveCount">0 turns</span><button id="resetBtn" class="text-btn">↻ <span>Reset</span></button></div></div>
+        <div class="board-top"><div class="stage-label"><span class="live-dot"></span><span id="stageLabel">ORCHARD 01 / 100</span></div><div class="board-tools"><span id="moveCount">0 turns</span><button id="levelPickerBtn" class="text-btn" aria-label="Choose an unlocked level">▦ <span>Levels</span></button><button id="resetBtn" class="text-btn">↻ <span>Reset</span></button></div></div>
         <div class="board-frame"><canvas id="game" aria-label="Signal Orchard game board. Use arrow keys to move between relays, Enter or Space to rotate." tabindex="0"></canvas><div id="toast" class="toast" aria-live="polite"></div><div id="overlay" class="overlay hidden"></div></div>
         <div class="board-footer"><span><i class="legend-source"></i> BEACON</span><span><i class="legend-relay"></i> RELAY SEED</span><span><i class="legend-grove"></i> DORMANT GROVE</span><span id="audioHint">SOUND ON</span></div>
       </section>
@@ -35,6 +35,9 @@
     </section>
     <footer class="page-footer"><span>TAKE A BREATH. FIND THE WAY.</span><span>NO TIMER · NO WRONG TURNS</span></footer>
   </main>
+  <div id="levelPicker" class="level-picker hidden" role="dialog" aria-modal="true" aria-labelledby="pickerTitle">
+    <section class="level-picker-card"><header class="picker-header"><div><div class="eyebrow">YOUR ORCHARD JOURNEY</div><h2 id="pickerTitle">Choose a level</h2><p id="pickerProgress">1 of 100 levels open</p></div><button id="closeLevelPicker" class="icon-btn" aria-label="Close level picker">×</button></header><div id="levelGrid" class="level-grid"></div><p class="picker-note">Complete a level to open the next one.</p></section>
+  </div>
   <script src="game.js"></script>
 </body>
 </html>
